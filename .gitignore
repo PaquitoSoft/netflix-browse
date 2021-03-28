@@ -1,0 +1,5 @@
+node_modules
+dist
+GUIDE.md
+publish.sh
+netflix-browse*.tgz
