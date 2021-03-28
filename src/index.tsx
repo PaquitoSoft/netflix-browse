@@ -17,7 +17,7 @@ export function setup(app: PiletApi) {
 		<Link to="/browse">Browse</Link>
 	);
 
-	const MovieTile: React.FC<MovieTileProps> = props => <app.Extension name="MovieTitle" params={props} />;
+	const MovieTile: React.FC<MovieTileProps> = props => <app.Extension name="MovieTile" params={props} />;
 	const FavoritesButton: React.FC<any> = props => <app.Extension name="ListToggle" params={props} />;
 	const BrowsePage: React.FC = () => <Browse MovieTile={MovieTile} FavoritesButton={FavoritesButton} />;
 	app.registerPage('/browse', BrowsePage);
